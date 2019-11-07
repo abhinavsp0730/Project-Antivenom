@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "92197804928",
+    "firebase_url": "https://snake-4a1c3.firebaseio.com",
+    "project_id": "snake-4a1c3",
+    "storage_bucket": "snake-4a1c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92197804928:android:b9beaaafe97c90c218ff65",
+        "android_client_info": {
+          "package_name": "com.xiken.projectantivenom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92197804928-vtjl9rm8djame7amfm1cbq5n81heerha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACL0aeIcE1UioeLjUa2su-MdJlBfmPABo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92197804928-vtjl9rm8djame7amfm1cbq5n81heerha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
