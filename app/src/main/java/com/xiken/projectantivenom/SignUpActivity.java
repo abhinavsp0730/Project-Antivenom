@@ -79,9 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
     }
-    public static void uploadData(){
 
-    }
     public boolean isEmailValid(String email){
         return email.contains("@");
     }
