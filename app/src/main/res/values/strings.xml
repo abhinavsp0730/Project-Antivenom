@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projectantivenom</string>
+    <string name="app_name">KrishiKranti</string>
     <string name="title_activity_main_screen">MainScreenActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,9 +9,15 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
+    <string name="menu_manual">Manual</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_about">About</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="title_activity_nav_activity">nav_activity</string>
+    <string name="snake_is_near_me">Snake is near me</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="user_manual">The Home Screen contains two icons. \n The \"Snake is near me\" Icon. \n• Gives you an option to scan an image of the snake upon clicking it.\n •You can either click a picture or long press the icon to select an image from the gallery.\n• The ML model identifies the snake and gives the result whether it is venomous or not along with its breed.\n • You get an option to call the Snake Rescuers, so that they can safely carry it away from you.\n  The \"Snake has bitten me\" Icon.\n • This is an emergency icon. \n\n• You immediately get an option to call the snake helpline number. \n\n Also, we have sliding text messages on the home screen to reduce panic and misconceptions of users related to snakes.</string>
+    <string name="about_app">Project AntiVenom is developed by xiken.tech. It is solely based on public welfare. The snake helpline is not our property, nor do we claim any part of it, you can check about the real heroes here :<a heref=" http://www.snakehelpline.com/about-us">https://www.snakehelpline.com/about-us/</a></string>
+    <string name="support">In case of any queries/feedback/suggestions/complaints, feel free to reach out to us at xiken.tech@gmail.com .</string>
 </resources>

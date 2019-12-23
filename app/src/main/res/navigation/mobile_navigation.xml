@@ -14,19 +14,19 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.xiken.projectantivenom.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_manual"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.xiken.projectantivenom.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_support"
+        android:name="com.xiken.projectantivenom.ui.support.SupportViewFragment"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support" />
 
     <fragment
         android:id="@+id/nav_tools"
         android:name="com.xiken.projectantivenom.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_about"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
@@ -40,4 +40,8 @@
         android:name="com.xiken.projectantivenom.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+    <fragment android:id="@+id/web"
+        android:name="com.xiken.projectantivenom.ui.web.WebV"
+        android:label="Plant Detection"
+        tools:layout="@layout/web_v"/>
 </navigation>

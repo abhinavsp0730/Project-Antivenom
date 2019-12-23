@@ -48,7 +48,7 @@ public class Main2Activity extends AppCompatActivity {
     Button cameraButton;
     ImageView imageView;
     Button analyze;
-    public static final String TAG ="volley";
+
     Uri uri;
     Bitmap bitmap = null;
 
@@ -58,9 +58,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == 10){
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                Log.d(TAG, "onRequestPermissionsResult: success");
             }else {
-                Log.d(TAG, "onRequestPermissionsResult: unSuccessful");
             }
         }
     }
@@ -69,8 +67,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode ==0 && resultCode == Activity.RESULT_OK && data != null) {
-            Log.d(TAG, "onActivityResult:  " + data.getDataString());
-            Log.d(TAG, "onActivityResult: uri " + uri);
+
             bitmap  = (Bitmap) data.getExtras().get("data");
             imageView.setImageBitmap(bitmap);
             final FirebaseCustomLocalModel firebaseLocalModel = new FirebaseCustomLocalModel.Builder().setAssetFilePath("model.tflite").build();
@@ -112,33 +109,14 @@ public class Main2Activity extends AppCompatActivity {
             firebaseModelInterpreter.run(inputs,firebaseModelInputOutputOptions).addOnSuccessListener(new OnSuccessListener<FirebaseModelOutputs>() {
                 @Override
                 public void onSuccess(FirebaseModelOutputs firebaseModelOutputs) {
-                    Log.d(TAG, "onSuccess: firebaseModeOutputs");
                     float[][] output = firebaseModelOutputs.getOutput(0);
 
 
-//                            Log.d(TAG, "onSuccess: OUuuutput" + output[0]);
 
                     float[] probabilities =  output[0];
-                    Log.d(TAG, "onSuccess: output" + output);
-//                            for (int i =0;i < probabilities.length;i++){
-//                                Log.d(TAG, "onSuccess: probability"+ probabilities[i]);
-//                            }
 
-//                    BufferedReader bufferedReader = null;
-
-//                        bufferedReader = new BufferedReader(new InputStreamReader(getAssets().open("retrained_labels.txt")));
-
-
-
-
-                    Log.d(TAG, "onSuccess: largestIndexNumber " + findLargestIndexNumber(probabilities));
                         for (int i =0; i < probabilities.length;i++) {
-//                                String label = bufferedReader.readLine();
-
-
-
-
-                            Log.d(TAG, "onSuccess: " +  probabilities[i]);
+//                                String label =
                         }
 
                         }
@@ -149,9 +127,7 @@ public class Main2Activity extends AppCompatActivity {
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
                 public void onFailure(@NonNull Exception e) {
-                    Log.d(TAG, "onFailure: firebaseModelOutputs "+ e.getMessage());
                     e.printStackTrace();
-                    Log.d(TAG, "onFailure: failure");
 
                 }
             });
@@ -169,17 +145,12 @@ public class Main2Activity extends AppCompatActivity {
         cameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "onClick: cameraButtonClicked");
+
                 if(ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA)  == PackageManager.PERMISSION_DENIED){
                     ActivityCompat.requestPermissions(Main2Activity.this,new String[]{Manifest.permission.CAMERA},10);
                 }else {
                     Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//
-//
-//                        File photo = new File(Environment.getExternalStorageDirectory(), "HelloPic.jpg");
-//                        intent.putExtra(MediaStore.EXTRA_OUTPUT,
-//                                Uri.fromFile(photo));
-//                        uri = Uri.fromFile(photo);
+
 
 
                     startActivityForResult(intent, 0);

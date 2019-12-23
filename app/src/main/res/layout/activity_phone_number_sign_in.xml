@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_of_sign_up_activity"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <EditText
+        android:id="@+id/verification_code"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_of_last_name_edit_text"
+
+
+        android:hint="Enter phone Number"
+
+
+        android:paddingLeft="20dp"
+
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/enter_name"
+        app:layout_constraintStart_toStartOf="@+id/enter_name"
+        app:layout_constraintTop_toBottomOf="@+id/enter_name" />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="267dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="172dp"
+        android:background="@drawable/background_of_last_name_edit_text"
+
+
+        android:hint="Enter name"
+
+
+        android:paddingLeft="20dp"
+
+        android:textColor="#ffff"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="209dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/sign_up_button_background"
+
+
+        android:text="Send Otp"
+        android:textColor="@color/custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verification_code" />
+
+    <ProgressBar
+        android:id="@+id/sign_in_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/create_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

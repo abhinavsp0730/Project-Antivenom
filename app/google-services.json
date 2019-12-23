@@ -15,11 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "92197804928-kv8vptk6340b4p88mku08hdo2d69mi1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xiken.projectantivenom",
+            "certificate_hash": "18e08c528dec7f89ebaa862dd48b0c2a20d44501"
+          }
+        },
+        {
           "client_id": "92197804928-vtjl9rm8djame7amfm1cbq5n81heerha.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
+        {
+          "current_key": "AIzaSyAHoSujox3mUeGU8fP-k99yVHxngpG009c"
+        },
         {
           "current_key": "AIzaSyACL0aeIcE1UioeLjUa2su-MdJlBfmPABo"
         }

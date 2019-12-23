@@ -8,5 +8,9 @@
     <color name="editText_bakground">#2c3e50</color>
     <color name="button_text_color">#2c3e50</color>
     <color name="custom">#B6B8B9</color>
+    <color name="custom_white">#CCD0D1</color>
+    <color name="green">#6BDB81</color>
+
+
 
 </resources>

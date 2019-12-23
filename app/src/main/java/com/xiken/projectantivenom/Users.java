@@ -11,6 +11,9 @@ public class Users {
         this.email = email;
     }
 
+    public Users() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -34,4 +37,6 @@ public class Users {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }
